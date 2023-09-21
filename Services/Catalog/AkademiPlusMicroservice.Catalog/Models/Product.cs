@@ -1,8 +1,12 @@
-﻿namespace AkademiPlusMicroservice.Catalog.Models
+﻿using MongoDB.Bson.Serialization.Attributes;
+
+namespace AkademiPlusMicroservice.Catalog.Models
 {
 	public class Product
 	{
-        public string ProductId{ get; set; }
+		[BsonId]
+		[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+		public string ProductId{ get; set; }
         public string ProductName{ get; set; }
         public decimal Price{ get; set; }
         public int Stock{ get; set; }
