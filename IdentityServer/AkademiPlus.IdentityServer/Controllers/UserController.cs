@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Threading.Tasks;
 using static IdentityServer4.IdentityServerConstants;
 
@@ -35,5 +38,11 @@ namespace AkademiPlus.IdentityServer.Controllers
 
 			return Ok("Kayıt Başarılı Oluşturuldu");
 		}
-	}
+		[HttpGet("[action]")]
+		public async Task<IActionResult> GetAllUsers()
+		{
+			var users = await _userManager.Users.ToListAsync();
+			return Ok(users);
+        }
+    }
 }
