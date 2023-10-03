@@ -28,8 +28,9 @@ namespace AkademiPlusMicroservice.Basket.Services
 
         public async Task<Response<bool>> SaveOrUpdate(BasketDto basketDto)
         {
-            var status = await _redisService.GetDb().StringGetSetAsync(basketDto.UserId, JsonSerializer.Serialize(basketDto));
-            return (bool)status ? Response<bool>.Success(204) : Response<bool>.Fail("Sepete ekleme veya güncelleme yapılmadı", 500);
+            var status = await _redisService.GetDb().StringSetAsync(basketDto.UserId, JsonSerializer.Serialize(basketDto));
+            return status ? Response<bool>.Success(204) : Response<bool>.Fail("Sepete ekleme veya güncelleme yapılmadı", 500);
         }
+        
     }
 }

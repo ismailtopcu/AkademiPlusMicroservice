@@ -8,10 +8,10 @@ namespace AkademiPlusMicroservice.Basket.Services
         private readonly int _port;
         private ConnectionMultiplexer _multiplexer;
 
-        public RedisService(int post, string host)
+        public RedisService( string host,int port)
         {
 
-            _port = post;
+            _port = port;
             _host = host;
         }
 

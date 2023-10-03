@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AkademiPlusMicroservice.Shared.Services
 {
-    internal class SharedIdentityService : ISharedIdentityService
+    public class SharedIdentityService : ISharedIdentityService
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
 
