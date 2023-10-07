@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AkademiPlusMicroservice.Services.Order.Core.Domain.Entities
+namespace Services.Order.Core.Domain.Entities
 {
     public class OrderDetail
     {

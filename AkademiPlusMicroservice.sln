@@ -33,13 +33,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{77C842DD-9F17-49A4-9574-18ACEB010DB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Services.Order.Core.Application", "Services\Order\Core\AkademiPlusMicroservice.Services.Order.Core.Application\AkademiPlusMicroservice.Services.Order.Core.Application.csproj", "{FC69BC7D-E00A-46B2-BABC-7BFB398B26A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Order.Core.Application", "Services\Order\Core\AkademiPlusMicroservice.Services.Order.Core.Application\Services.Order.Core.Application.csproj", "{FC69BC7D-E00A-46B2-BABC-7BFB398B26A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Services.Order.Core.Domain", "Services\Order\Core\AkademiPlusMicroservice.Services.Order.Core.Domain\AkademiPlusMicroservice.Services.Order.Core.Domain.csproj", "{3E4864A6-95CD-4CEA-8065-F36245C5A9C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Order.Core.Domain", "Services\Order\Core\AkademiPlusMicroservice.Services.Order.Core.Domain\Services.Order.Core.Domain.csproj", "{3E4864A6-95CD-4CEA-8065-F36245C5A9C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Services.Order.Infrastructure.Persistance", "Services\Order\Infrastructure\AkademiPlusMicroservice.Services.Order.Infrastructure.Persistance\AkademiPlusMicroservice.Services.Order.Infrastructure.Persistance.csproj", "{51B559AB-E3B8-4DE6-9D20-6795D974E950}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Order.Infrastructure.Persistance", "Services\Order\Infrastructure\AkademiPlusMicroservice.Services.Order.Infrastructure.Persistance\Services.Order.Infrastructure.Persistance.csproj", "{51B559AB-E3B8-4DE6-9D20-6795D974E950}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Services.Order.Presentation.Api", "Services\Order\Presentation\AkademiPlusMicroservice.Services.Order.Presentation.Api\AkademiPlusMicroservice.Services.Order.Presentation.Api.csproj", "{CDA8F5C6-8C21-4DEB-92A1-B5DBE78103AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Order.Presentation.Api", "Services\Order\Presentation\AkademiPlusMicroservice.Services.Order.Presentation.Api\Services.Order.Presentation.Api.csproj", "{CDA8F5C6-8C21-4DEB-92A1-B5DBE78103AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

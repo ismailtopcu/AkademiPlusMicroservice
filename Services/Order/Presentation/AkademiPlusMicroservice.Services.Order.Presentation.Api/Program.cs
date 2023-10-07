@@ -1,8 +1,46 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Services.Order.Core.Application.Interfaces;
+using Services.Order.Infrastructure.Persistance.Context;
+using System.IdentityModel.Tokens.Jwt;
+using Services.Order.Core.Application.Services;
+using Services.Order.Infrastructure.Persistance.Repositories;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+{
+	opt.Authority = builder.Configuration["IdentityServerUrl"];
+	opt.Audience = "resource_order";
+	opt.RequireHttpsMetadata = false;
+});
+
+builder.Services.AddControllers(opt =>
+{
+	opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy));
+});
+builder.Services.AddDbContext<OrderContext>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddHttpContextAccessor(); 
+
+
+builder.Services.AddMediatR(cfg => {
+	cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
+});
+builder.Services.AddApplicationServices();
+
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -17,7 +55,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
