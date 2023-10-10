@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\AkademiPlusMicroservice.Services.Order.Core.Application\Services.Order.Core.Application.csproj" />
     <ProjectReference Include="..\..\Core\AkademiPlusMicroservice.Services.Order.Core.Domain\Services.Order.Core.Domain.csproj" />
   </ItemGroup>
 

@@ -27,19 +27,11 @@ builder.Services.AddControllers(opt =>
 	opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy));
 });
 builder.Services.AddDbContext<OrderContext>();
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddHttpContextAccessor(); 
-
-
-builder.Services.AddMediatR(cfg => {
-	cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
-});
-builder.Services.AddApplicationServices();
-
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddApplicationServices();
+builder.Services.AddHttpContextAccessor(); 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

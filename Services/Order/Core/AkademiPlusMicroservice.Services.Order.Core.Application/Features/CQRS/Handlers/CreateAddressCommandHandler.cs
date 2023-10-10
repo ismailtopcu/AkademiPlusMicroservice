@@ -32,9 +32,9 @@ namespace Services.Order.Core.Application.Features.CQRS.Handlers
 				District = request.District,
 				UserId = request.UserId,
 			};
-			var result = await _repository.CreateAsync(values);
-
-			return _mapper.Map<CreateAddressDto>(result);
+			await _repository.CreateAsync(values);
+			var result = _mapper.Map<CreateAddressDto>(values);
+			return result;
 		}
 	}
 

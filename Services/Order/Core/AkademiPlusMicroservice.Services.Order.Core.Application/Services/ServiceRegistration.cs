@@ -16,8 +16,10 @@ namespace Services.Order.Core.Application.Services
 	{
 		public static void AddApplicationServices(this IServiceCollection services)
 		{
-			
-			services.AddAutoMapper(opt =>
+            var assembly = Assembly.GetExecutingAssembly();
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
+
+            services.AddAutoMapper(opt =>
 			{
 				opt.AddProfiles(new List<Profile>
 				{
