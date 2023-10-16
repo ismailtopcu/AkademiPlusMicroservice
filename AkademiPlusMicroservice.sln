@@ -53,11 +53,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusMicroservice.Pre
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{CC5403C5-6C3E-468E-8C8E-74B3A8484F08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Services.PhotoStock", "Services\AkademiPlusMicroservice.Services.PhotoStock\AkademiPlusMicroservice.Services.PhotoStock.csproj", "{3CA68A93-BD0E-41A7-A7CA-347457A7349A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusMicroservice.Services.PhotoStock", "Services\AkademiPlusMicroservice.Services.PhotoStock\AkademiPlusMicroservice.Services.PhotoStock.csproj", "{3CA68A93-BD0E-41A7-A7CA-347457A7349A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{AE7595E8-56D0-4238-9E49-C33445D1470E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Services.Payment", "Services\AkademiPlusMicroservice.Services.Payment\AkademiPlusMicroservice.Services.Payment.csproj", "{46334DE7-9E19-4408-AF4D-BC21F94CCA5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkademiPlusMicroservice.Services.Payment", "Services\AkademiPlusMicroservice.Services.Payment\AkademiPlusMicroservice.Services.Payment.csproj", "{46334DE7-9E19-4408-AF4D-BC21F94CCA5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{4057E695-6941-41F0-8770-4CACBE09FF25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Gateway", "Gateways\AkademiPlusMicroservice.Gateway\AkademiPlusMicroservice.Gateway.csproj", "{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +129,10 @@ Global
 		{46334DE7-9E19-4408-AF4D-BC21F94CCA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46334DE7-9E19-4408-AF4D-BC21F94CCA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46334DE7-9E19-4408-AF4D-BC21F94CCA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +163,7 @@ Global
 		{3CA68A93-BD0E-41A7-A7CA-347457A7349A} = {CC5403C5-6C3E-468E-8C8E-74B3A8484F08}
 		{AE7595E8-56D0-4238-9E49-C33445D1470E} = {FE2C46A2-934D-4688-8397-01F1BEE487B6}
 		{46334DE7-9E19-4408-AF4D-BC21F94CCA5E} = {AE7595E8-56D0-4238-9E49-C33445D1470E}
+		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723} = {4057E695-6941-41F0-8770-4CACBE09FF25}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94096EBC-4633-47F3-A71A-008D89814A8F}
