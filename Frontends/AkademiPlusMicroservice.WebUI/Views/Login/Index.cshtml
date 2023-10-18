@@ -1,0 +1,22 @@
+﻿@model LoginDto
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Kullanıcı Giriş Sayfası</h3>
+
+<div class="container">
+    <div class="row">
+        <form method="post">
+            <label class="form-control">Kullanıcı Adınız </label>
+            <input type="text" asp-for="Username" />
+            <br />
+            <label class="form-control">Şifreniz</label>
+            <input type="password" asp-for="Password" />
+            <br />
+            <button class="btn btn-outline-primary">Giriş Yap</button>
+        </form>
+        <a href="/Register/index" class="btn btn-success">Kayıt Ol</a>
+    </div>
+</div>
+

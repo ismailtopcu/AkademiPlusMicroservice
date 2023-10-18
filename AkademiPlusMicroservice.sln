@@ -63,6 +63,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{40
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.Gateway", "Gateways\AkademiPlusMicroservice.Gateway\AkademiPlusMicroservice.Gateway.csproj", "{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{5B7FB2C9-96C4-447C-9A71-D72E0034BF91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkademiPlusMicroservice.WebUI", "Frontends\AkademiPlusMicroservice.WebUI\AkademiPlusMicroservice.WebUI.csproj", "{194D407E-D764-4F01-A0FD-A5D1F51952FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +137,10 @@ Global
 		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{194D407E-D764-4F01-A0FD-A5D1F51952FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{194D407E-D764-4F01-A0FD-A5D1F51952FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{194D407E-D764-4F01-A0FD-A5D1F51952FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{194D407E-D764-4F01-A0FD-A5D1F51952FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +172,7 @@ Global
 		{AE7595E8-56D0-4238-9E49-C33445D1470E} = {FE2C46A2-934D-4688-8397-01F1BEE487B6}
 		{46334DE7-9E19-4408-AF4D-BC21F94CCA5E} = {AE7595E8-56D0-4238-9E49-C33445D1470E}
 		{82DEE15A-AC61-4D9E-BA3A-7A02AF1F8723} = {4057E695-6941-41F0-8770-4CACBE09FF25}
+		{194D407E-D764-4F01-A0FD-A5D1F51952FF} = {5B7FB2C9-96C4-447C-9A71-D72E0034BF91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94096EBC-4633-47F3-A71A-008D89814A8F}
