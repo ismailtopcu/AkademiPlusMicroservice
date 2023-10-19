@@ -6,7 +6,7 @@
 
 <h1>Kupon Güncelleme</h1>
 <div class="container">
-    <form class="form-control" method="post">
+    <form class="form-control" method="post" asp-action="UpdateDiscount2">
         <input type="hidden" asp-for="DiscountCouponId"/>
         <label class="form-control">Kupon Adı</label>
         <input type="text" asp-for="Code" />
@@ -14,7 +14,7 @@
         <label class="form-control">Kupon Oranı</label>
         <input type="text" asp-for="Rate" />
         <br />
-        <button class="btn btn-success">Kupon Ekle</button>
+        <button class="btn btn-success">Kupon Güncelle</button>
     </form>
 </div>
 
